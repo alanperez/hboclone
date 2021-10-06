@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import { useEffect } from "react";
 import { useStateContext } from "../../HBOProvider";
 import { useRouter } from "next/router";
