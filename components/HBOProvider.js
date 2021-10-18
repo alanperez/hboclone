@@ -10,7 +10,7 @@ export function useStateContext() {
 
 export function HBOProvider({ children }) {
   const [user, setUser] = useState("");
-  const defaultUserImg = "https://uifaces.co/our-content/donated/vIqzOHXj.jpg";
+  const defaultUserImg = "https://i.pravatar.cc/300";
   const createUserAction = (event) => {
     setUser(event.target.value);
   };
@@ -45,6 +45,7 @@ export function HBOProvider({ children }) {
     <StateContext.Provider
       value={{
         user,
+        setUser,
         createUserAction,
         defaultUserImg,
         sideNavOpen,

@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react-hooks/exhaustive-deps */
 import axios from "axios";
 import Link from "next/dist/client/link";
 import { useState, useEffect } from "react";
@@ -33,9 +36,6 @@ const MediaRow = (props) => {
       <Skeleton key={"4"} />,
       <Skeleton key={"5"} />,
     ];
-    // for (let index = 1; index <= digit; index++) {
-    //   thumbnails.push(comp);
-    // }
 
     return thumbnails;
   };
@@ -79,7 +79,7 @@ const Thumbnail = (props) => {
       return "342";
     }
   };
-  // const imgURL = "https://image.tmdb.org/t/p/original";
+
   const imgURL = "https://image.tmdb.org/t/p/w";
   return (
     <Link
